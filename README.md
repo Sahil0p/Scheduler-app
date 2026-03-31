@@ -1,8 +1,8 @@
-# 🚀 Scheduler App (Calendly Clone)
+# 🚀 Scheduler App 
 
 A modern **appointment booking platform** where users can share their booking link and allow others to schedule meetings seamlessly.
 
-🌐 **Live Demo:** https://your-vercel-link.vercel.app
+🌐 **Live Demo:** [🔗 Scheduler App](https://scheduler-app-blue.vercel.app/)
 
 ---
 
@@ -11,59 +11,59 @@ A modern **appointment booking platform** where users can share their booking li
 Scheduler App is a **full-stack web application** inspired by Calendly.  
 It allows users to:
 
-- Sign in using Google Authentication
-- Share a personalized booking link
-- Let others book available time slots
-- Receive booking confirmation emails
+- 🔐 Sign in using Google Authentication  
+- 🔗 Share a personalized booking link  
+- 📅 Let others book available time slots  
+- 📩 Receive booking confirmation emails  
 
 ---
 
 # 🛠️ Tech Stack
 
-### Frontend
-- Next.js 16 (App Router)
-- React.js
-- Tailwind CSS (Responsive UI)
+### 🎨 Frontend
+- ⚛️ Next.js 16 (App Router)  
+- ⚛️ React.js  
+- 🎨 Tailwind CSS (Responsive UI)  
 
-### Backend
-- Next.js API Routes
-- Prisma ORM
+### 🧠 Backend
+- 🔌 Next.js API Routes  
+- 🗄️ Prisma ORM  
 
-### Database
-- PostgreSQL (Neon / Supabase / Local)
+### 🗃️ Database
+- 🐘 PostgreSQL (Neon / Supabase / Local)  
 
-### Authentication
-- NextAuth.js (Google OAuth)
+### 🔐 Authentication
+- 🔑 NextAuth.js (Google OAuth)  
 
-### Email Service
-- Resend API
+### 📧 Email Service
+- 📬 Resend API  
 
-### Deployment
-- Vercel
+### 🚀 Deployment
+- ▲ Vercel  
 
 ---
 
 # ✨ Features
 
 ### 🔐 Authentication
-- Google Sign-In (NextAuth)
-- Secure session management
+- 🔑 Google Sign-In (NextAuth)  
+- 🛡️ Secure session management  
 
 ### 📅 Booking System
-- Unique user booking link
-- Date selection
-- Dynamic time slot availability
-- Prevent double booking
+- 🔗 Unique user booking link  
+- 📆 Date selection  
+- ⏳ Dynamic time slot availability  
+- ❌ Prevent double booking  
 
 ### 📧 Email Confirmation
-- Automated email sent after booking
+- 📩 Automated email sent after booking  
 
 ### 📊 Dashboard
-- View and share booking link
-- Copy-to-clipboard functionality
+- 🧾 View and share booking link  
+- 📋 Copy-to-clipboard functionality  
 
 ### 📱 Responsive Design
-- Fully mobile responsive UI
+- 📲 Fully mobile responsive UI  
 
 ---
 
@@ -71,18 +71,23 @@ It allows users to:
 
 ## 1️⃣ Clone the Repository
 
-```bash
-git clone https://github.com/your-username/scheduler-app.git
-cd scheduler-app
 ```
+git clone https://github.com/Sahil0p/Scheduler-app
+cd Scheduler-app
+```
+
 ## 2️⃣ Install Dependencies
+
 ```
 npm install
 ```
-## 3️⃣ Setup Environment Variables
 
-- Create .env.local file:
-```
+## 3️⃣ Setup Environment Variables ⚙️
+
+Create a `.env.local` file:
+
+```env
+
 DATABASE_URL=your_database_url
 
 NEXTAUTH_URL=http://localhost:3000
@@ -92,6 +97,7 @@ GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 
 RESEND_API_KEY=your_resend_api_key
+
 ```
 
 ## 4️⃣ Setup Database
@@ -148,23 +154,29 @@ npm run dev
 
 ---
 
-## ⚙️ Deployment
-
-Deployed on Vercel
-```
-Important Config:
-Add environment variables in Vercel
-Add Google OAuth redirect URL:
-https://your-domain.vercel.app/api/auth/callback/google
-```
-
----
-
 # 🧠 Learnings
-- Implemented full authentication flow using NextAuth
-- Built REST APIs with Next.js App Router
-- Integrated Prisma with PostgreSQL
-- Handled real-world booking conflicts
-- Integrated email services (Resend)
+- 🔐 Implemented full authentication flow using NextAuth  
+- 🔌 Built REST APIs with Next.js App Router  
+- 🗄️ Integrated Prisma with PostgreSQL  
+- ⚔️ Handled real-world booking conflicts  
+- 📩 Integrated email services (Resend)  
 
 ---
+
+# ⭐ Support
+
+If you like this project:
+
+- ⭐ Star the repo  
+- 🍴 Fork it  
+- 📢 Share with others  
+
+---
+
+# 👨‍💻 Author
+
+**Sahil Ahmed**
+
+- 💼 MERN Stack Developer  
+- 🚀 Passionate about building real-world applications  
+
