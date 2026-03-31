@@ -1,36 +1,170 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Scheduler App (Calendly Clone)
 
-## Getting Started
+A modern **appointment booking platform** where users can share their booking link and allow others to schedule meetings seamlessly.
 
-First, run the development server:
+🌐 **Live Demo:** https://your-vercel-link.vercel.app
+
+---
+
+# 📌 Overview
+
+Scheduler App is a **full-stack web application** inspired by Calendly.  
+It allows users to:
+
+- Sign in using Google Authentication
+- Share a personalized booking link
+- Let others book available time slots
+- Receive booking confirmation emails
+
+---
+
+# 🛠️ Tech Stack
+
+### Frontend
+- Next.js 16 (App Router)
+- React.js
+- Tailwind CSS (Responsive UI)
+
+### Backend
+- Next.js API Routes
+- Prisma ORM
+
+### Database
+- PostgreSQL (Neon / Supabase / Local)
+
+### Authentication
+- NextAuth.js (Google OAuth)
+
+### Email Service
+- Resend API
+
+### Deployment
+- Vercel
+
+---
+
+# ✨ Features
+
+### 🔐 Authentication
+- Google Sign-In (NextAuth)
+- Secure session management
+
+### 📅 Booking System
+- Unique user booking link
+- Date selection
+- Dynamic time slot availability
+- Prevent double booking
+
+### 📧 Email Confirmation
+- Automated email sent after booking
+
+### 📊 Dashboard
+- View and share booking link
+- Copy-to-clipboard functionality
+
+### 📱 Responsive Design
+- Fully mobile responsive UI
+
+---
+
+# 🧑‍💻 How to Run Locally
+
+## 1️⃣ Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/scheduler-app.git
+cd scheduler-app
+```
+## 2️⃣ Install Dependencies
+```
+npm install
+```
+## 3️⃣ Setup Environment Variables
+
+- Create .env.local file:
+```
+DATABASE_URL=your_database_url
+
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your_secret
+
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
+RESEND_API_KEY=your_resend_api_key
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 4️⃣ Setup Database
+```
+npx prisma generate
+npx prisma migrate dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 5️⃣ Run the App
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+npm run dev
+```
 
-## Learn More
+> 👉 Open: `http://localhost:3000`
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 🚀 How to Use
+## 👤 User Flow
+- Login using `Google`
+- Go to `Dashboard`
+- `Copy` your booking link
+- Share with others
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📅 Booking Flow
+- Open booking link
+- Select a date
+- Choose available time slot
+- Enter `name` & `email`
+- Confirm booking
+- Receive email confirmation 📩
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 🎯 Use Cases & Applications
+- Freelancers scheduling client calls
+- Interview scheduling platform
+- Mentorship booking system
+- Consulting appointment system
+- Internal team meeting scheduler
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# 🔮 Future Scope & Improvements
+- 🔁 Calendar integrations (Google Calendar)
+- ⏰ Timezone support
+- 💳 Paid bookings (Stripe integration)
+- 🔔 Email + SMS reminders
+- 📊 Analytics dashboard
+- 👥 Multi-user team support
+- 🎨 Advanced UI customization
+- 📆 Weekly availability settings
+
+---
+
+## ⚙️ Deployment
+
+Deployed on Vercel
+```
+Important Config:
+Add environment variables in Vercel
+Add Google OAuth redirect URL:
+https://your-domain.vercel.app/api/auth/callback/google
+```
+
+---
+
+# 🧠 Learnings
+- Implemented full authentication flow using NextAuth
+- Built REST APIs with Next.js App Router
+- Integrated Prisma with PostgreSQL
+- Handled real-world booking conflicts
+- Integrated email services (Resend)
+
+---
